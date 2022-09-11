@@ -17,6 +17,7 @@
 		5C59748A28CC37E100CFA4D5 /* CalendarDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59748928CC37E100CFA4D5 /* CalendarDateCollectionViewCell.swift */; };
 		5C59748C28CC380C00CFA4D5 /* CalendarPickerFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59748B28CC380C00CFA4D5 /* CalendarPickerFooterView.swift */; };
 		5C59748E28CC382A00CFA4D5 /* CalendarPickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59748D28CC382A00CFA4D5 /* CalendarPickerHeaderView.swift */; };
+		5C5974FA28CDBDE500CFA4D5 /* CalculatorServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5974F928CDBDE500CFA4D5 /* CalculatorServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		5C59748928CC37E100CFA4D5 /* CalendarDateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		5C59748B28CC380C00CFA4D5 /* CalendarPickerFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerFooterView.swift; sourceTree = "<group>"; };
 		5C59748D28CC382A00CFA4D5 /* CalendarPickerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickerHeaderView.swift; sourceTree = "<group>"; };
+		5C5974F928CDBDE500CFA4D5 /* CalculatorServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		5C59746828CC312800CFA4D5 /* ios-framework */ = {
 			isa = PBXGroup;
 			children = (
+				5C5974F828CDBDCA00CFA4D5 /* logic */,
 				5C59748628CC378900CFA4D5 /* View */,
 				5C59748528CC377F00CFA4D5 /* Controller */,
 				5C59748028CC36FC00CFA4D5 /* Modal */,
@@ -125,6 +128,14 @@
 				5C59748D28CC382A00CFA4D5 /* CalendarPickerHeaderView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5C5974F828CDBDCA00CFA4D5 /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				5C5974F928CDBDE500CFA4D5 /* CalculatorServices.swift */,
+			);
+			path = logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 				5C59748228CC370A00CFA4D5 /* Day.swift in Sources */,
 				5C59748428CC374200CFA4D5 /* MonthMetadata.swift in Sources */,
 				5C59746B28CC312800CFA4D5 /* ios_framework.docc in Sources */,
+				5C5974FA28CDBDE500CFA4D5 /* CalculatorServices.swift in Sources */,
 				5C59748C28CC380C00CFA4D5 /* CalendarPickerFooterView.swift in Sources */,
 				5C59748E28CC382A00CFA4D5 /* CalendarPickerHeaderView.swift in Sources */,
 			);

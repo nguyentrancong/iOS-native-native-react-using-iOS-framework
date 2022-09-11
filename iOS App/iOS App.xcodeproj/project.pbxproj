@@ -17,6 +17,8 @@
 		5C5974B628CC429F00CFA4D5 /* iOS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5974B528CC429F00CFA4D5 /* iOS_AppTests.swift */; };
 		5C5974C028CC429F00CFA4D5 /* iOS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5974BF28CC429F00CFA4D5 /* iOS_AppUITests.swift */; };
 		5C5974C228CC429F00CFA4D5 /* iOS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5974C128CC429F00CFA4D5 /* iOS_AppUITestsLaunchTests.swift */; };
+		5C5974F428CDB2B400CFA4D5 /* ios_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5974F028CDB25500CFA4D5 /* ios_framework.framework */; };
+		5C5974F528CDB2B400CFA4D5 /* ios_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5974F028CDB25500CFA4D5 /* ios_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,35 @@
 			remoteGlobalIDString = 5C59749728CC429D00CFA4D5;
 			remoteInfo = "iOS App";
 		};
+		5C5974EF28CDB25500CFA4D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C5974EA28CDB25500CFA4D5 /* ios-framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C59746628CC312800CFA4D5;
+			remoteInfo = "ios-framework";
+		};
+		5C5974F128CDB25500CFA4D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C5974EA28CDB25500CFA4D5 /* ios-framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C59747028CC312900CFA4D5;
+			remoteInfo = "ios-frameworkTests";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C5974F628CDB2B400CFA4D5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C5974F528CDB2B400CFA4D5 /* ios_framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5C59749828CC429D00CFA4D5 /* iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +81,7 @@
 		5C5974BB28CC429F00CFA4D5 /* iOS AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5974BF28CC429F00CFA4D5 /* iOS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppUITests.swift; sourceTree = "<group>"; };
 		5C5974C128CC429F00CFA4D5 /* iOS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C5974EA28CDB25500CFA4D5 /* ios-framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "ios-framework.xcodeproj"; path = "../../ios-framework/ios-framework.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5974F428CDB2B400CFA4D5 /* ios_framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +117,7 @@
 				5C5974B428CC429F00CFA4D5 /* iOS AppTests */,
 				5C5974BE28CC429F00CFA4D5 /* iOS AppUITests */,
 				5C59749928CC429D00CFA4D5 /* Products */,
+				5C5974F328CDB2B400CFA4D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +134,7 @@
 		5C59749A28CC429D00CFA4D5 /* iOS App */ = {
 			isa = PBXGroup;
 			children = (
+				5C5974EA28CDB25500CFA4D5 /* ios-framework.xcodeproj */,
 				5C59749B28CC429D00CFA4D5 /* AppDelegate.swift */,
 				5C59749D28CC429D00CFA4D5 /* SceneDelegate.swift */,
 				5C59749F28CC429D00CFA4D5 /* ViewController.swift */,
@@ -130,6 +164,22 @@
 			path = "iOS AppUITests";
 			sourceTree = "<group>";
 		};
+		5C5974EB28CDB25500CFA4D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C5974F028CDB25500CFA4D5 /* ios_framework.framework */,
+				5C5974F228CDB25500CFA4D5 /* ios-frameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C5974F328CDB2B400CFA4D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +190,7 @@
 				5C59749428CC429D00CFA4D5 /* Sources */,
 				5C59749528CC429D00CFA4D5 /* Frameworks */,
 				5C59749628CC429D00CFA4D5 /* Resources */,
+				5C5974F628CDB2B400CFA4D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +271,12 @@
 			mainGroup = 5C59748F28CC429D00CFA4D5;
 			productRefGroup = 5C59749928CC429D00CFA4D5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5C5974EB28CDB25500CFA4D5 /* Products */;
+					ProjectRef = 5C5974EA28CDB25500CFA4D5 /* ios-framework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5C59749728CC429D00CFA4D5 /* iOS App */,
@@ -228,6 +285,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5C5974F028CDB25500CFA4D5 /* ios_framework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ios_framework.framework;
+			remoteRef = 5C5974EF28CDB25500CFA4D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C5974F228CDB25500CFA4D5 /* ios-frameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ios-frameworkTests.xctest";
+			remoteRef = 5C5974F128CDB25500CFA4D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5C59749628CC429D00CFA4D5 /* Resources */ = {
